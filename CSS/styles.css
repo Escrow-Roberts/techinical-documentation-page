@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #navbar {
+    background-color: #ffffff;
+      padding-bottom: 5px;
+      width: 20%;
+      min-width: 13rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      overflow: hidden;
+      border: 1px solid black;
+      border-right: 7px double;
+      border-color:rgb(0, 0, 0);
+    z-index: 1;
+    }
+    @media screen and (max-width: 81.25rem) {
+      #navbar {
+        transition: 0.19ms;
+      }
+    }
+    #navbar > #navbar-head {
+      color: #000;
+      padding: 14px;
+      font-style: bold;
+      font-size: 19px;
+      font-weight: 500;
+      font-family: monospace;
+      width: 100%;
+      min-width: 63.8rem;
+      border-bottom: 3px solid;
+      border-bottom-color: #000;
+    }
+    @media screen and (max-width: 95.4rem) {
+      #navbar > #navbar-head {
+        font-size: 18px;
+        transition: 0.19ms;
+      }
+      @media screen and (max-width: 90.99rem ) {
+  
+        #navbar > #navbar-head {
+          font-size: 17px;
+          transition: 0.19ms;
+        }
+      }
+      @media screen and (max-width: 87.8rem) {
+        #navbar > #navbar-head {
+          font-size: 16px;
+          transition: 0.19ms;
+        }
+      }
+      @media screen and (max-width: 82.44rem) {
+        #navbar > #navbar-head {
+          font-size: 15px;
+          transition: 0.19ms;
+        }
+      }
+      @media screen and (max-width: 77.13rem) {
+        #navbar > #navbar-head {
+          font-size: 14px;
+          transition: 0.19ms;
+        }
+      }
+      @media screen and (max-width: 72.89rem) {
+        #navbar > #navbar-head {
+          font-size: 13px;
+          transition: 0.19ms;
+        }
+        @media screen and (max-width: 68.82rem) {
+          #navbar > #navbar-head {
+            font-size: 12px;
+            transition: 0.19ms;
+          }
+        }
+      }
+      @media screen and (max-width: 61.5rem) {
+        #navbar > #navbar-head {
+          font-size: 11.5px;
+          transition: 0.19ms;
+        }
+      }
+    }
+    #navbar > .nav-link-wrapper > .link {
+      list-style: none;
+      padding: 20px;
+      margin-left:0.5rem;
+      margin-top: 39.9px;
+      margin-bottom: 0.6rem;
+      border-bottom: 3px solid;
+      border-bottom-color: #000;
+      width:100%;
+      min-width: 10rem;
+      max-width: 97rem;
+      height: inherit;
+     
+    }
+    #navbar > .nav-link-wrapper > .link > .nav-link {
+      color: #000;
+      padding: inherit;
+      margin: 15px;
+      width: 90%;
+      font-size: 23px;
+      font-style: bold;
+      font-weight: 500;
+      display: block;
+      text-decoration: none;
+  
+    }
+    @media screen and (max-width: 91.5rem) {
+      #navbar > .nav-link-wrapper > .link > .nav-link {
+        transition: 0.19ms;
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+    }
+      @media screen and (max-width: 81.32rem) {
+        #navbar > .nav-link-wrapper > .link > .nav-link {
+          font-size: inherit;
+          padding: 20px;
+          margin-bottom: 20px;
+          transition: 0.19ms;
+        }
+    
+      }
+      @media screen and (max-width: 73.99rem) {
+        #navbar > .nav-link-wrapper > .link > .nav-link {
+          font-size: 13px;
+          margin-bottom: 24px;
+          transition: 0.19ms;
+        }
+      }
+    
+    #main-doc {
+    border: 4px solid;
+    border-color: black;
+    border-radius: 1.3vh;
+    background-color: #ffffff;
+      margin-left: 30px;
+      padding: 50px;
+      position: absolute;
+      display: block;
+      top: 20px;
+      left: 25%;
+      right: 20px;
+      width: inherit;
+      min-width: 29rem;
+      overflow: hidden;
+    
+    }
+    @media screen and (max-width: 69rem) {
+      #main-doc {
+        font-size: 20px;
+        margin-left: 6.3rem;
+        transition: 0.19ms;
+      }
+    }
+    
+    #main-doc > .main-section > .header-parent {
+      background-color: #000;
+      color: #fff;
+      padding: 5px;
+      margin-bottom: 2rem;
+      margin-top: 1.5rem;
+      margin-left: -1.35rem;
+      letter-spacing: 2px;
+    }
+    #main-doc > .main-section > .header-parent > .header-child {
+      padding: 10px;
+      font-style: oblique;
+      font-weight: 600;
+      font-size: 24px;
+    }
+  #main-doc > .main-section > .explain {
+    margin: 1rem;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 1.55rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }   
+  #main-doc > .main-section > .point-wrapper {
+    padding: 10px;
+    margin: 20px 0;
+    font-family: monospace;
+  }
+  #main-doc > .main-section > .point-wrapper > .point {
+    padding: 5px;
+    margin: 7px 3px 0 60px;
+    font-size: 18px;
+  
+  }
+  #main-doc > .main-section > .example-text {
+    width: 100%;
+    margin-left: 32px;
+    margin-bottom: -1.33em;
+    margin-top: 2em;
+    padding: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: initial;
+    
+  }
+  #main-doc > .main-section > #example {
+    background-color: rgb(16, 18, 17);
+    color: #fff;
+    display: block;
+    width: 50%;
+    margin-left: 4.55em;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    padding: 2em;
+  }
+  #main-doc > .main-section > .mid-head-wrapper {
+    text-decoration: underline;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: -20px;
+    margin-top: 1em;
+    padding: 10px;
+  }
+  #main-doc > .main-section > .mid-head-wrapper > .mid-head {
+    padding: 7px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  #main-doc > .main-section > .mini-head {
+    background-color: coral;
+    margin: 10px 0 10px 45px;
+    padding: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+   
+  }

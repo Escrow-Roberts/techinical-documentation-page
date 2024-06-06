@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header id="navbar-head">
+          <h1>CSS Documentation</h1>
+        </header>
+        <ul class="nav-link-wrapper">
+          
+          <li class="link"><a  class="nav-link" href="#css_introduction">CSS Introduction</a></li>
+         <li class="link"><a class="nav-link"  href="#css_syntax">CSS Syntax</a></li>
+          <li class="link"><a class="nav-link" href="#css_selectors">CSS Selectors</a></li>
+          <li class="link"><a class="nav-link" href="#css_comments">CSS Comments</a></li>
+          <li class="link"><a class="nav-link" href="#css_colors">CSS Colors</a></li>
+        </ul>
+      </nav>
+    <main id="main-doc">
+      <section class="main-section" id="css_introduction">
+        <header class="header-parent">
+          <h3 class="header-child">CSS Introduction</h3>
+        </header>
+        <p class="explain">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). </p>
+        <p class="explain">CSS is designed to enable the separation of presentation and content, including layout, colors, fonts. This separation can improve content accessiblity;enable multiple web pages to share formatting by specifying the relevant CSS is a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improved the page load speed between the pages that share the file and its formatting.</p>       
+        <ul class="point-wrapper">
+          <li class="point">CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</li>
+          <li class="point">CSS has a simple syntax and uses a number of words from the English language to specify multiple properties.</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="css_syntax">
+        <header class="header-parent">
+          <h3 class="header-child">CSS Syntax</h3>
+        </header>
+
+        <p class="explain">A CSS rule consist of a selector and a declaration block. The selector points to the HTML element you want to style, while the declaration consist of a property and a value, separated by a colon. The multiple declarations are separated by semicolon.</p>
+
+        <p class="example-text">In the example below we are using CSS to change the color and font of an HTML <em>p</em> tag.</p>
+
+        <code id="example"> p {color: #000000; font-style: bold;} </code>
+
+        <p class="example-text">In the declaration above we gave the paragraph element a default <em>color</em> of black and a bold <em>font</em></p>
+        <ul class="point-wrapper">
+        <li class="point">Each declaration block is surrounded by curly braces.</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="css_selectors">
+         <header class="header-parent">
+           <h3 class="header-child">CSS Selectors</h3>
+         </header>
+         <p class="explain">A CSS selecto selects the HTML element(s) you wish to style. They are multiple selectors which are simple selectors, combinator selectors, pseudo-class selectors, pseudo-elements selectors and attribute selectors.</p>
+
+        <ul class="mid-head-wrapper">
+         <li class="mid-head"><strong>Simple Selectors</strong> - Select elements based on <em>name</em>, <em>id</em>, <em>class</em>.</li>
+        </ul>
+         
+
+         <p class="example-text">The example below shows three mentioned simple selectors in order.</p>
+         <h6 class="mini-head">Name Selector</h6>
+         <code id="example">p {margin: 30px auto; width: 100%;}</code>
+        
+         <h6 class="mini-head">ID Selector <span>(#)</span></h6>
+         <code id="example">#navbar {position: absolute; top: 0; left: 6em; bottom: 0;}</code>
+
+         <h6 class="mini-head">Class Selector <span>(.)</span></h6>
+         <code id="example">.nav {background-color: #ffffff; position: fixed; top: 0;}</code>
+
+       <ul class="mid-head-wrapper">
+         <li class="mid-head"><strong>Combinator Selector</strong> - Selects elements based on a specific relationship between them</li>
+       </ul>
+
+       <p class="example-text"> The examples below shows three combinator selectors.</p>
+       
+       <h6 class="mini-head">Descendant selector <span>(space)</sapn></h6>
+       <code id="example"> div p {background-color: rgb(0, 0, 255);}</code>
+
+      <h6 class="mini-head">Child Selector <span>(>)</span></h6>
+      <code id="example"> div > p {background-color: rgb(0, 0, 255);}</code>
+        
+        <h6 class="mini-head">Adjacent Sibiling Selector <span>(+)</span></h6>
+        <code id="example"> div + p {background-color: rgb(0,  0, 255);}</code>
+
+        <ul class="mid-head-wrapper">
+          <li class="mid-head"><strong>Pseudo-Classes Selector</strong> - Selector element based on a certain state.</li>
+          </ul>
+
+          <p class="example-text">The examples below shows three pseudo-classes selectors</p>
+
+          <h6 class="mini-head">:hover Pseudo-Classes Selector</h6>
+          <code id="example">a:hover {color: rgb(112, 56,  155);}</code>
+          <h6 class="mini-head">:first-child Pseudo-Classes Selector</h6>
+          <code id="example">a:first-child {color: rgb(112, 56,  155);}</code>
+          <h6 class="mini-head">:last-of-type Pseudo-Classes Selector</h6>
+          <code id="example">a:last-of-type {color: rgb(112, 56,  155);}</code>
+          
+          <ul class="mid-head-wrapper">
+            <li class="mid-head"><strong>Pseudo-Elements Selector</strong> - Select and style a part of an element.</li>
+          </ul>
+
+          <p class="example-text">The text below shows three psuedo-elements selectors.</p>
+          <h6 class="mini-head">::first-line Pseudo-element selector</h6>
+          <code id="example"> p::first-line {color: rgba(255, 255, 255, 70%);}</code>
+          <h6 class="mini-head">::first-letter Pseudo-element selector</h6>
+          <code id="example"> p::first-letter {color: rgba(255, 255, 255, 70%);}</code>
+          <h6 class="mini-head">::marker Pseudo-element selector</h6>
+          <code id="example"> p::marker {color: rgba(255, 255, 255, 70%);}</code>
+
+          <ul class="mid-head-wrapper">
+            <li class="mid-head"><strong>Attribute Selector</strong> - Selects an element based on an attribute or attribute value.</li>
+          </ul>
+
+          <p class="example-text">The example below shows three attribute selectors.</p>
+          <h6 class="mini-head">[attribute] Selector</h6>
+          <code id="example">a[target] {background-color: #1a1a7b;}</code>
+          <h6 class="mini-head">[attribute~="value"] Selector</h6>
+          <code id="example">[title~="flower"] {border: 5px solid #1a1a7b;}</code>
+          <h6 class="mini-head">[attribute|="value"] Selector</h6>
+          <code id="example">[class|="top"] {background-color: #1a1a7b;}</code>
+      </section>
+
+      <section class="main-section" id="css_comments">
+         <header class="header-parent">
+           <h3 class="header-child">CSS Comments</h3>
+         </header>
+         <p class="explain">CSS comments are not displayed in the broswer, but they can help document the source code. they are used to explain the code, and may help when you edit the source code at a later date.</p>
+
+          <ul class="point-wrapper">  
+           <li class="point">Comments are ignored by the browsers.</li>
+          <li class="point">Comments can be added anywhere is a style element</li>
+         </ul>
+         <p class="example-text">The example below shows two comment methods.</p>
+         <h6 class="mini-head">Single Line Comment</h6>
+         <code id="example">/* This is a single line comment*/ <br> p {font-style: bold;} </code>
+         <h6 class="mini-head">Multiple Line Comment</h6>
+         <code id="example">/* This is a comment <br>on multiple<br>lines */</code>
+      </section>
+
+      <section class="main-section" id="css_colors">
+         <header class="header-parent">
+           <h3 class="header-child">CSS Colors</h3>
+         </header>
+         <p class="explain">Colors are specified or called, using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. This allows us to change the background color and text color of HTML elements.</p>
+          
+          <p class="example-text">The example below shows three color values</p>
+          <ul class="point-wrapper">
+          <li class="point">This will change the <em>li</em> with a <em>class</em> of example-li</li>
+        </ul>
+          <h6 class="mini-head ">RGB Color Value</h6>
+         <code id="example">.example-li {background-color: rgb(0, 0, 255);}</code>
+         <h6 class="mini-head">HEX Color Value</h6>
+         <code id="example"> .example-li {background-color: #1a1a7b;}</code>
+         <h6 class="mini-head">HSL Color Value</h6>
+         <code id="example">.example-li {background-color: hsl(100, 50%, 75%)}</code>
+      </section>
+      <main>
+</body>
+</html>
