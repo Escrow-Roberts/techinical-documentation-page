@@ -2,23 +2,105 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    gap: 30px;
   }
   #navbar {
-    background-color: #ffffff;
-      padding-bottom: 5px;
-      width: 20%;
-      min-width: 13rem;
+    position: fixed;
+    border: 1px solid black;
+    margin: 1px;
+    height: 100%;
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1fr;
+    row-gap: 0.5rem;
+    text-align: center;
+    grid-column: 1/2;
+    z-index: 1;
+   padding: 3px;
+    }
+    #navbar-head {
+     height: 100%;
+     padding: 7px;
+     background-color: green;
+     width: fit-content;
+     align-content: center;
+     margin: 0 auto;
+    }
+    #navbar-head h1{
+      background-color: pink;
+      padding: 8px;
+    }
+    .link {
+      list-style: none;
+    }
+    .nav-link {
       height: 100%;
       display: flex;
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      overflow: hidden;
-      border: 1px solid black;
-      border-right: 7px double;
-      border-color:rgb(0, 0, 0);
-    z-index: 1;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 25px;
+      width: inherit;
+      background-color: grey;
     }
+    .link-1 {
+      background-color: brown;
+    }
+    .link-2 {
+      background-color:cadetblue ;
+    }
+    .link-3{
+       background-color:burlywood ;
+    }
+    .link-4 {
+      background-color: #ccc;
+    }
+    .link-5 {
+      background-color: #22eedf
+    }
+    /**
+    #navbar-head {
+      grid-row: 1/2;
+      grid-column: 1/2;
+      border: 3px solid rgb(3, 3, 3);
+    }
+    .nav-link {
+      background-color: antiquewhite;
+      font-size: 22px;
+    
+      }
+      .link {
+        background-color: aquamarine;
+      }
+     
+    .link-1 {
+      border: 3px solid cyan;
+     grid-row: 2/3;
+     grid-column: 1/2;
+   
+    }
+    .link-2 {
+      border: 3px solid cyan;
+     grid-row: 3/4;
+     grid-column: 1/2
+    }
+    .link-3 {
+      border: 3px solid cyan;
+     grid-row: 4/5;
+     grid-column: 1/2
+    }
+    .link-4 {
+      border: 3px solid cyan;
+     grid-row: 5/6;
+     grid-column: 1/2
+    }
+    .link-5 {
+      border: 3px solid cyan;
+     grid-row: 6/7;
+     grid-column: 1/2
+    }
+    
+    
     @media screen and (max-width: 81.25rem) {
       #navbar {
         transition: 0.19ms;
@@ -93,7 +175,6 @@
       margin-bottom: 0.6rem;
       border-bottom: 3px solid;
       border-bottom-color: #000;
-      width:100%;
       min-width: 10rem;
       max-width: 97rem;
       height: inherit;
@@ -134,7 +215,9 @@
           transition: 0.19ms;
         }
       }
-    
+*/
+
+    /*MAIN*/
     #main-doc {
     border: 4px solid;
     border-color: black;
@@ -150,7 +233,6 @@
       width: inherit;
       min-width: 29rem;
       overflow: hidden;
-    
     }
     @media screen and (max-width: 69rem) {
       #main-doc {
