@@ -7,8 +7,8 @@
   #navbar {
     position: fixed;
     background-color: black;
-    margin: 0 1px;
-    height:99.6%;
+    margin: 0 2px 0 0;
+    height:100%;
     display: grid;
     grid-row: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column: 40px;
@@ -16,10 +16,9 @@
     text-align: center;
     grid-column: 1/2;
     z-index: 10;
-   padding:3px;
-   left:0;
+    padding:3px;
+    left:0;
     top: 0;
-
     }
     #navbar-head {
      height: 100%;
@@ -44,7 +43,6 @@
       list-style: none;
      background-color: coral;
      border: 3px solid coral;
-
     }
     .nav-link {
       height: 100%;
@@ -57,11 +55,20 @@
       color: white;
       z-index: 9;
     }
+    .link:hover{
+      background-color: rgba(255, 255, 255, 0.952);
+      border: none;
+      }
+      .nav-link:hover {
+        font-size: 14px;
+        z-index:11;
+        transition: 0.5ms;
+        color: coral;
+        padding: 7px;
+        }
     
     @media only screen and (max-width: 764px) {
-      
       #navbar {
-       
         width: 100%;
         height: fit-content;
         font-size: 10px;
@@ -78,17 +85,15 @@
       min-width: 130px;
     }
       .link {
-      width: max-content;
-      width:  50%;
-      max-width:  50%;
-      min-width: 16%;
+        width: max-content;
+        width:  50%;
+        max-width:  50%;
+        min-width: 16%;
       }
       .nav-link {
         font-size: 11px;
         width: 100%;
       }
-      
-      
     }
     @media only screen and (max-width: 764px) {
       #navbar {
@@ -101,7 +106,6 @@
       .link-1 {
         font-size: 30px;
       }
-
     }
     /**
     #navbar-head {
@@ -264,19 +268,19 @@
 
     /*MAIN*/
     #main-doc {
-   
-    background-color: #ffffff;
+      background-color: #ffffff;
       margin-left: 6rem;
       padding: 20px 50px;
-     position: absolute;
+      position: absolute;
       display: block;
-      top: 20px;
+      top: 2px;
       left: 153.594px;
       right: 20px;
       gap : 100px;
       min-width: 29rem;
       overflow: hidden;
-     z-index: 9;
+      z-index: 9;
+      box-shadow: -5px 1px 12px 1px;
     }
     
     @media screen and (max-width: 69rem) {
@@ -326,13 +330,11 @@
   #main-doc > .main-section > .example-text {
     width: 100%;
     margin-left: 32px;
-    margin-bottom: -1.33em;
+    margin-bottom: 0.33em;
     margin-top: 2em;
     padding: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: initial;
-
-    
   }
   #main-doc > .main-section > #example {
     background-color: rgb(16, 18, 17);
@@ -364,14 +366,14 @@
     padding: 10px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
-   
   }
   @media only screen and (max-width: 764px) {
     #main-doc {
-     width: 100%;
+      width: 100%;
       left: 0;
-     margin-left: 0;
+      margin-left: 0;
       gap: 10px;
+      top: 50px;
     }
     #main-doc > .main-section > #example {
       margin: 0 auto;
